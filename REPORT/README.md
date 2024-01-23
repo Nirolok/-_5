@@ -115,6 +115,11 @@ git pull origin main
 
 Для нормальной работы git flow нам нужно создать ветку develop (по аналогии с предыдущими), после чего можно инициализировать git flow с помощью команды `git flow init`.
 
+(В случае успешной инициализации увидим вот это)
+
+![image](https://github.com/Nirolok/-_5/assets/40453222/8f6f1f69-3aae-49d5-80c4-3e6cf23adbdc)
+
+
 Затем, командой `git flow feature start task-management` фетку новой функциональности. В ней создаём файл task_manager.py, в который вставляем код
 
 ~~~
@@ -149,11 +154,15 @@ git commit -m "Обновлена версия для релиза v1.0.0"
 
 После этого можно завершить релиз командой `git flow release finish v1.0.0` и объкдкняем его с основной веткой.
 
+![image](https://github.com/Nirolok/-_5/assets/40453222/b81dff8c-b77e-4c3c-8086-f65d63f42102)
+
+
 Создадим хотфикс
 
 ~~~
 git flow hotfix start hotfix-1.0.1
 ~~~
+
 
 Внесём изменения и коммитим
 
@@ -168,7 +177,12 @@ git commit -m "Исправлена критическая ошибка"
 git flow hotfix finish hotfix-1.0.1
 ~~~
 
+![image](https://github.com/Nirolok/-_5/assets/40453222/8b0d5528-454e-4ac3-a7eb-f339a8cb1a59)
+
 В конце завершаем работы и отравляем изменения на наш репозиторий.
+
+![image](https://github.com/Nirolok/-_5/assets/40453222/3d4220e6-6db1-47c0-b51a-3c71aed91ede)
+
 
 ~~~
 git push origin develop
